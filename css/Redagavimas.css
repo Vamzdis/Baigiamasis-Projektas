@@ -41,12 +41,12 @@ nav .nav-wrapper form, nav .nav-wrapper form .input-field{
     height: 100%;
 }
 .container{
-    text-align: center;
-    padding: 30px;
+    text-align: left;
+    padding: 5px;
 }
 
 .page-footer{
-    margin-top: 30px;
+    margin-top: 5px;
 }
 
 .card-panel{
