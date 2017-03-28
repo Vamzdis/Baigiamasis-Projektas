@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title> Score The Lay-up </title>
     <link rel="stylesheet" href="css/cssreset.css">
+    <link rel="stylesheet" href="css/Redagavimas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/Social%20Media.css">
 
 
 </head>
-<body>
+<body class joinBody>
 <nav> <div class="nav-wrapper">
     <a href="Pagrindinis.html" class="brand-logo right">©Score The Lay-up</a>
     <ul class="left hide-on-med-and-down">
@@ -53,10 +54,23 @@
 <div class="container" id="Home">
     <article>
         <h1>Join us! </h1>
-        <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
+        <p>Leave a message below:</p>
     </article>
 
 </div>
+
+<form action="gauti.php" class="forma">
+    Vardas:<br>
+    <input type="text" name="firstname" value="">
+    <br>
+    Pavardė:<br>
+    <input type="text" name="lastname" value="">
+    <br>
+    Žinutė<br>
+    <textarea name="message"></textarea>
+    <br><br>
+    <input type="submit" value="send">
+</form>
 
 <footer class="page-footer light-blue darken-1">
     <div class="container">
