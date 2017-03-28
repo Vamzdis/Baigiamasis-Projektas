@@ -63,3 +63,9 @@ nav .nav-wrapper form, nav .nav-wrapper form .input-field{
 .card-panel{
 
 }
+.List, .white-text1 {
+    text-align: left;
+}
+.row{
+    text-align: left;
+}
