@@ -40,13 +40,23 @@
 nav .nav-wrapper form, nav .nav-wrapper form .input-field{
     height: 100%;
 }
+
+.forma{
+    margin:auto;
+    width: 50%;
+    border: solid black;
+    padding: 30px;
+
+}
+
 .container{
     text-align: center;
-    padding: 30px;
+    padding: 5px;
+
 }
 
 .page-footer{
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .card-panel{
