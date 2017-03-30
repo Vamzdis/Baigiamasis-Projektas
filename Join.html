@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/html">
+<html lang="en" xmlns="http://www.w3.org/1999/html" ng-app="myApp">
 <head>
     <meta charset="UTF-8">
     <title> Score The Lay-up </title>
+
     <link rel="stylesheet" href="css/cssreset.css">
     <link rel="stylesheet" href="css/Redagavimas.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.1/css/materialize.min.css">
@@ -10,9 +11,13 @@
     <link rel="stylesheet" href="css/Social%20Media.css">
     <link rel="stylesheet" href="css/Redagavimas.css">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+    <script src="js/myController.js"></script>
+    <script src="js/myApp.js"></script>
 
 </head>
-<body class joinBody>
+<body ng-init="vardas='Dziugas'">
+{{2+2}}
 <nav> <div class="nav-wrapper red darken-4">
     <a href="Pagrindinis.html" class="brand-logo right">©Score The Lay-up</a>
     <ul class="left hide-on-med-and-down">
@@ -52,7 +57,48 @@
     </div>
 </div>
 
-<div class="container" id="Home">
+<div class="row">
+    <div class="col s6">
+        <div class="card">
+            <div class="card-image">
+                <img src="">
+                <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+                <a href="#">This is a link</a>
+            </div>
+        </div>
+    </div>
+    <div class="col s6">
+        <div class="card">
+            <div class="card-image">
+                <img src="">
+                <span class="card-title">Card Title</span>
+            </div>
+            <div class="card-content">
+                <p>I am a very simple card. I am good at containing small bits of information.
+                    I am convenient because I require little markup to use effectively.</p>
+            </div>
+            <div class="card-action">
+                <a href="#">This is a link</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container" id="Home" ng-controller = "myController as ctrl">
+
+    <div class="chip"
+         ng-repeat="asmuo in ctrl.masyvas"
+    >
+        {{asmuo.name}}
+    </div>
+
     <article>
         <h1>Join us! </h1>
         <p>Leave a message below:</p>
@@ -72,6 +118,7 @@
     <br><br>
     <input type="submit" value="send">
 </form>
+
 
 <footer class="page-footer light-blue darken-1">
     <div class="container">
