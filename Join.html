@@ -16,7 +16,7 @@
     <script src="js/myApp.js"></script>
 
 </head>
-<body ng-init="vardas='Dziugas'">
+<body  ng-controller = "myController as ctrl">
 {{2+2}}
 <nav> <div class="nav-wrapper red darken-4">
     <a href="Pagrindinis.html" class="brand-logo right">©Score The Lay-up</a>
@@ -91,7 +91,7 @@
 </div>
 
 
-<div class="container" id="Home" ng-controller = "myController as ctrl">
+<div class="container" id="Home">
 
     <div class="chip"
          ng-repeat="asmuo in ctrl.masyvas"
