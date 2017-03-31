@@ -38,3 +38,16 @@ nav .nav-wrapper form, nav .nav-wrapper form .input-field{
     border-radius: 50%;
     margin:2px;
 }
+h2{
+    float: right;
+    position: relative;
+    font-size: 15px;
+    font-family: cursive;
+    text-shadow:0 0.1em 0.2em #008c8d;
+}
+#menius, #menius1, #menius2{
+    font-family: 'Vollkorn', serif;
+    color: #f1ffe6;
+    text-shadow:0 0.1em 0.2em #008c8d;
+    background: #2b535d;
+}
