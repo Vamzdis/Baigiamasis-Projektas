@@ -14,22 +14,13 @@ nav .nav-wrapper form, nav .nav-wrapper form .input-field{
     padding: 30px;
 
 }
-#Home{
-    font-family: 'Vollkorn', serif;
-    color: #030305;
-    text-shadow:0 0.1em 0.2em #a0a998;
-
-}
 
 
 .page-footer{
     margin-top: 10px;
 }
 
-.card{
-    box-shadow: 10px 10px grey;
 
-}
 .List, .white-text1 {
     text-align: left;
 }
@@ -41,22 +32,8 @@ nav .nav-wrapper form, nav .nav-wrapper form .input-field{
 #dropdown1{
     margin : 34px;
 }
-#menius, #menius1, #menius2{
-    font-family: 'Vollkorn', serif;
-    color: #f1ffe6;
-    text-shadow:0 0.1em 0.2em #008c8d;
-    background: #2b535d;
-    ;
-}
+
 #log{
     border-radius: 50%;
-
     margin:2px;
-}
-h2 {
-    float: right;
-    position: relative;
-    font-size: 15px;
-    font-family: cursive;
-    text-shadow:0 0.1em 0.2em #008c8d;
 }
