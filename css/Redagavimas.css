@@ -2,25 +2,16 @@ nav .nav-wrapper form, nav .nav-wrapper form .input-field{
     height: 100%;
 }
 
-.forma{
-    margin:auto;
-    width: 50%;
-    border: solid black;
-    padding: 30px;
-
-}
-
-
 .container{
     text-align: center;
+    margin: auto;
+    width: 65%;
     padding: 5px;
-
-
 }
-#Home{
-    font-family: 'Vollkorn', serif;
-    color: #030305;
-    text-shadow:0 0.1em 0.2em #a0a998;
+
+.forma{
+    border: solid black;
+    padding: 30px;
 
 }
 
@@ -29,51 +20,21 @@ nav .nav-wrapper form, nav .nav-wrapper form .input-field{
     margin-top: 10px;
 }
 
-.card{
-    box-shadow: 7px 7px 3px grey;
 
-}
+
 .List, .white-text1 {
     text-align: left;
 }
+
 .row{
     text-align: left;
-}
-#kontaktai{
-    margin: auto;
-    width: 50%;
 }
 
 #dropdown1{
     margin : 34px;
 }
-#menius, #menius1, #menius2{
-    font-family: 'Vollkorn', serif;
-    color: #f1ffe6;
-    text-shadow:0 0.1em 0.2em #008c8d;
-    background: #2b535d;
-    ;
-}
+
 #log{
     border-radius: 50%;
     margin:2px;
-}
-h2 {
-    float: right;
-    position: relative;
-    font-size: 15px;
-    font-family: cursive;
-    text-shadow:0 0.1em 0.2em #008c8d;
-}
-#example-1 {
-    column-width:15em;
-    column-gap: 4em
-}
-
-#example-1 h1 {
-    column-span: all
-}
-
-#example-1 pre {
-    column-break-before: left;
 }
