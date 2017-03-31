@@ -25,7 +25,7 @@
     <li class="divider"></li>
     <li><a href="NBA.html">NBA Games</a></li>
     <li class="divider"></li>
-    <li><a href="NBAstandings.html">NBA Standings</a></li>
+    <li><a href="NBAstandings.php">NBA Standings</a></li>
     <li class="divider"></li>
     <li><a href="Euroleague.html">Euroleague Games</a></li>
     <li class="divider"></li>
@@ -73,10 +73,50 @@
 </div>
 
 <div class="container" id="Home">
-    <article>
-        <h1>NBA Standings </h1>
-        <p>Google Chrome is a free, open-source web browser developed by Google, released in 2008.</p>
-    </article>
+  <?php
+$servername = "localhost";
+$username = "root";
+$password = '';
+$dbname = 'baigiamasisprojektas';
+
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+    }
+echo'  <div style="width:100%;height:30px; background-color:"> <h4>Eastern Conference</h4> </div>';
+    $sql = "SELECT * FROM `eastern conference`";
+    $result = $conn->query($sql);
+echo "<table>";
+    if ($result->num_rows > 0) {
+    $i=1;
+
+    while($row = $result->fetch_assoc()) {
+    echo "<tr><td>" . $i++ . "</td><td>" . $row['name'] . "</td><td>" .$row['w']. "</td><td>". $row['l']. "</td></tr>";
+        }
+
+        echo "</table>";
+    } else {
+    echo "0 results";
+    }
+  echo'  <div style="width:100%;height:30px; background-color:"> <h4>Western Conference</h4> </div>';
+    $sql = "SELECT * FROM `western conference`";
+        $result = $conn->query($sql);
+echo "<table>";
+        if ($result->num_rows > 0) {
+        $i=1;
+
+        while($row = $result->fetch_assoc()) {
+         echo "<tr><td>" . $i++ . "</td><td>" . $row['name'] . "</td><td>" .$row['w']. "</td><td>". $row['l']. "</td></tr>";
+                }
+
+                echo "</table>";
+        } else {
+        echo "0 results";
+        }
+
+    $conn->close();
+    ?>
 
 </div>
 
