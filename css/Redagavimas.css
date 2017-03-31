@@ -37,6 +37,7 @@ nav .nav-wrapper form, nav .nav-wrapper form .input-field{
 #log{
     border-radius: 50%;
     margin:2px;
+    border: outset;
 }
 h2{
     float: right;
