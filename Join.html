@@ -23,7 +23,9 @@
     <script src="js/myApp.js"></script>
 
 </head>
-<body  ng-controller = "myController as ctrl">
+
+<body ng-controller = "myController as ctrl">
+
 <ul id="dropdown1" class="dropdown-content">
     <li class="divider"></li>
     <li><a href="NBA.html">NBA Games</a></li>
@@ -35,6 +37,7 @@
     <li><a href="EUROLEAGUEstandings.html">Euroleague Standings</a></li>
     <li class="divider"></li>
 </ul>
+
 <nav>
     <div class="nav-wrapper red darken-4">
         <a href="Pagrindinis.html" class="brand-logo right">©Score The Lay-up</a>
@@ -48,6 +51,7 @@
     </div>
 </nav>
 <script> $(".dropdown-button").dropdown();</script>
+
 <nav>
     <div class="nav-wrapper light-blue darken-1">
         <form>
@@ -60,26 +64,43 @@
     </div>
 </nav>
 
-<div class="container" id="Home">
-    <div class="col s12 m8 offset-m2 l6 offset-l3">
-            <div class="card-panel grey lighten-5 z-depth-1">
-                <div class="row align-wrapper">
-                    <div class="col s2" id="shaq" >
-                        <img src="img/shaq.jpg">
-                    </div>
-                    <div class="col s10">
-                  <span class="black-text">
-
-                      <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">Who takes home the 2017 <a href="https://twitter.com/hashtag/Shaqcast?src=hash">#Shaqcast</a> Borderline Bracket Championship? Get your votes in today!</p>&mdash; Jenners (@RobJenners) <a href="https://twitter.com/RobJenners/status/846719998760497152">March 28, 2017</a></blockquote>
-    <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-                       </span>
-                    </div>
+<div class="container">
+<br>
+    <h1>Meet our editor: SHAQ</h1>
+    <br>
+    <div class="col s12 m7">
+        <div class="card horizontal">
+            <div class="card-image">
+                <img src="img/shaq.jpg">
+            </div>
+            <div class="card-stacked">
+                <div class="card-content">
+                    <p>
+                        <a class="twitter-timeline"
+                           href="https://twitter.com/SHAQ"
+                           data-width="400"
+                           data-height="315">Tweets by SHAQ
+                        </a>
+                        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    </p>
+                </div>
+                <div class="card-action">
+                    <a href="https://twitter.com/Shaq" class="twitter-follow-button" data-show-count="false">Follow @Shaq</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
             </div>
+        </div>
     </div>
+<br>
+    <h2>
+        SHAQ's team:
+    </h2>
+<br>
 
-
-
+    <div class="chip"
+         ng-repeat="asmuo in ctrl.masyvas"
+    >
+        {{asmuo.name}}
+    </div>
 
     <div class="row" id="kontaktai">
         <div class="col s6">
@@ -89,8 +110,7 @@
                     <span class="card-title"></span>
                 </div>
                 <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                    <p>Bla bla bla bla</p>
                 </div>
                 <div class="card-action">
                     <a href="mailto:dziugas@lay-up.com">email Džiugas</a>
@@ -104,8 +124,7 @@
                     <span class="card-title"></span>
                 </div>
                 <div class="card-content">
-                    <p>I am a very simple card. I am good at containing small bits of information.
-                        I am convenient because I require little markup to use effectively.</p>
+                    <p>Bla bla bla bla</p>
                 </div>
                 <div class="card-action">
                     <a href="mailto:ignas@lay-up.com">email Ignas</a>
@@ -114,20 +133,9 @@
         </div>
     </div>
 
-
-
-    <div class="chip"
-         ng-repeat="asmuo in ctrl.masyvas"
-    >
-        {{asmuo.name}}
-    </div>
-
     <article>
-        <h1>Join us! </h1>
-        <p>Leave a message below:</p>
+        <h3>Leave a message below:</h3>
     </article>
-
-</div>
 
 <form action="gauti.php" class="forma">
     Vardas:<br>
@@ -142,7 +150,7 @@
     <input type="submit" value="send">
 </form>
 
-
+</div>
 <footer class="page-footer light-blue darken-1">
     <div class="container">
         <div class="row ">
@@ -166,7 +174,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            Copyright © 2017 STL. All rights reserved.
+            Copyright © 2017 Kaunas Coding School. All rights reserved.
         </div>
     </div>
 </footer>

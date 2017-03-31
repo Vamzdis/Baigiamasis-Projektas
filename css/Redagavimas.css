@@ -2,42 +2,30 @@ nav .nav-wrapper form, nav .nav-wrapper form .input-field{
     height: 100%;
 }
 
-.forma{
-    margin:auto;
-    width: 50%;
-    border: solid black;
-    padding: 30px;
-
-}
-
-
 .container{
     text-align: center;
+    margin: auto;
+    width: 65%;
     padding: 5px;
+}
 
+.forma{
+    border: solid black;
+    padding: 30px;
 }
 
 .page-footer{
     margin-top: 10px;
 }
 
-.card-panel{
-
-}
 .List, .white-text1 {
     text-align: left;
 }
+
 .row{
     text-align: left;
-}
-#kontaktai{
-    margin: auto;
-    width: 50%;
 }
 
 #dropdown1{
     margin : 34px;
-}
-
-.twitter-tweet{
 }
