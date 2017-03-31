@@ -52,3 +52,10 @@ h2{
     text-shadow:0 0.1em 0.2em #008c8d;
     background: #2b535d;
 }
+#foto2{
+    border-radius: 50%;
+    }
+#real,#cska,#oly,#fener, #anadolu {
+    width: 40px;
+    height:40px;
+}
